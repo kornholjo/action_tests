@@ -30,6 +30,7 @@ jobs:
       # Install Rust
       - name: Install Rust
         run: |
+          uname -p
           curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
           source "$HOME/.cargo/env"
           git clone https://github.com/kornholjo/action_tests.git
